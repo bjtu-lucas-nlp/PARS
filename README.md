@@ -72,14 +72,20 @@ session_id	item_id_sequence	label_sequence	unique_item_sequence
 Basic training command:
 ```bash
 python pars_model.py \
-    --train_data_file data/train.csv \
-    --val_data_file data/val.csv \
-    --test_data_file data/test.csv \
-    --num_items 50000 \
-    --num_sessions 100000 \
-    --epochs 10 \
+    --train_data_file datasets/Yoochoose/train.csv \
+    --val_data_file datasets/Yoochoose/val.csv \
+    --test_data_file datasets/Yoochoose/test.csv \
+    --num_items 39300 \
+    --num_sessions 417370 \
+    --epochs 300 \
     --batch_size 256 \
-    --lr 1e-4
+    --data_name Yoochoose \
+    --max_seq_len 50 \
+    --lr 1e-4 \
+    --mlm_weight 1.0 \
+    --hidden_size 256 \
+    --embedding_dim 128 \
+    --save_dir trainedmodel/Yoochoose
 ```
 
 ### Full Parameter List
