@@ -6,11 +6,11 @@
 
 ## Overview
 
-PARS (Partial-Label-Learning-Inspired Recommender Systems) is a novel approach that combines partial label learning with transformer-based sequence modeling for improved recommendation performance. This method addresses the challenge of implicit feedback in recommender systems by treating user interactions as partial labels and progressively refining them during training.
+PARS (Partial-Label-Learning-Inspired Recommender Systems) is a novel approach that utilizes partial label learning with transformer-based sequence modeling for learning conversion probabilities (or item purchase probabilities) from browsing to transaction without directly giving supervision of item acquisition. This method addresses the challenge of implicit feedback in recommender systems by treating user interactions as partial labels and progressively refining them during training.
 
 ## Key Features
 
-- **Partial Label Learning**: Implements PRODEN method for handling ambiguous user feedback
+- **Partial Label Learning**: Implements the partial label learning method for handling ambiguous user feedback
 - **Transformer-based Architecture**: Utilizes BERT-style transformers for sequence modeling
 - **Masked Language Modeling (MLM)**: Self-supervised learning for better item representations
 - **Global Representation Learning**: Generates user/session representations for efficient recommendation
